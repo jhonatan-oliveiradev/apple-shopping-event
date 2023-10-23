@@ -125,7 +125,7 @@
 			}
 
 			&:last-child {
-				bottom: 5.5rem;
+				bottom: 3rem;
 			}
 		}
 
@@ -148,6 +148,65 @@
 		}
 	}
 
-	.offer-section {
+	.offers-section {
+		text-align: center;
+
+		display: flex;
+		flex-direction: column;
+
+		justify-content: space-between;
+		align-items: center;
+
+		.text-wrapper {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 3.25rem;
+
+			color: var(--text-dark);
+
+			h2 {
+				color: var(--text-dark);
+				font-size: 3.5rem;
+				font-weight: bold;
+				line-height: 4rem;
+				letter-spacing: -0.28px;
+			}
+
+			h3 {
+				width: 30rem;
+				align-self: center;
+				margin: 0.5rem auto;
+
+				font-size: 1.5rem;
+				font-weight: normal;
+				line-height: 2rem;
+				letter-spacing: 1.2px;
+			}
+
+			.offer-links {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				width: 100%;
+				max-width: 11rem;
+
+				a {
+					color: var(--action-color);
+					line-height: 1.875rem;
+					font-size: 1.25rem;
+					text-decoration: none;
+					transition: all 0.2s ease-in-out;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
 	}
 }

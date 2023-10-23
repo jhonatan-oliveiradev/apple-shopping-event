@@ -1,0 +1,202 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+:root {
+  --background-primary: #000000;
+  --text-light: #ffffff;
+  --text-dark: #1d1d1f;
+  --title-primary-color: #f5f5f7;
+  --title-secondary-color: #ded2b9;
+  --subtitle-color: #6e6e73;
+  --action-color: #2997ff;
+}
+
+main section {
+  text-align: center;
+  position: relative;
+}
+
+main section img {
+  width: 100%;
+  height: auto;
+}
+
+.header-container {
+  background-color: var(--background-primary);
+  color: var(--text-light);
+  height: -moz-fit-content;
+  height: fit-content;
+  opacity: 1;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.75rem 0;
+}
+.header-container nav ul {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.header-container nav ul li {
+  list-style: none;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 0.75rem;
+  font-size: small;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.header-container nav ul li:hover {
+  color: var(--text-primary);
+}
+
+.main-container .hero-section {
+  background-color: var(--background-primary);
+  text-align: center;
+  height: calc(100vh - 2.6875rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container .hero-section .text-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.25rem;
+}
+.main-container .hero-section .text-wrapper h1 {
+  color: var(--title-primary-color);
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 4rem;
+  letter-spacing: -0.28px;
+}
+.main-container .hero-section .text-wrapper h2 {
+  width: 30rem;
+  align-self: center;
+  margin: 0.5rem auto;
+  color: var(--subtitle-color);
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 2rem;
+  letter-spacing: 1.2px;
+}
+.main-container .hero-section .text-wrapper h2 sub {
+  font-size: 0.8rem;
+}
+.main-container .hero-section .text-wrapper a {
+  color: var(--action-color);
+  line-height: 1.875rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.main-container .hero-section .text-wrapper a:hover {
+  text-decoration: underline;
+}
+.main-container .hero-section img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.main-container .hotest-section > div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-container .hotest-section > div:first-child {
+  top: 130px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 60%;
+}
+.main-container .hotest-section > div:first-child p {
+  color: var(--title-secondary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  letter-spacing: -0.0375rem;
+}
+.main-container .hotest-section > div:last-child {
+  bottom: 3rem;
+}
+.main-container .hotest-section .text-wrapper p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.11px;
+  color: var(--title-primary-color);
+}
+.main-container .hotest-section .text-wrapper span {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  display: block;
+  letter-spacing: 0.23px;
+  color: var(--text-light);
+  display: block;
+}
+.main-container .offers-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container .offers-section .text-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.25rem;
+  color: var(--text-dark);
+}
+.main-container .offers-section .text-wrapper h2 {
+  color: var(--text-dark);
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 4rem;
+  letter-spacing: -0.28px;
+}
+.main-container .offers-section .text-wrapper h3 {
+  width: 30rem;
+  align-self: center;
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 2rem;
+  letter-spacing: 1.2px;
+}
+.main-container .offers-section .text-wrapper .offer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 11rem;
+}
+.main-container .offers-section .text-wrapper .offer-links a {
+  color: var(--action-color);
+  line-height: 1.875rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.main-container .offers-section .text-wrapper .offer-links a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
