@@ -10,6 +10,17 @@
   --background-primary: #000000;
   --text-light: #ffffff;
   --title-primary-color: #f5f5f7;
+  --title-secondary-color: #ded2b9;
   --subtitle-color: #6e6e73;
   --action-color: #2997ff;
+}
+
+main section {
+  text-align: center;
+  position: relative;
+}
+
+main section img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=globals.css.map */

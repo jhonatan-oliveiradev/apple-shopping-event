@@ -97,10 +97,57 @@
 
 		img {
 			position: absolute;
-			width: 100%;
-			height: auto;
 			bottom: 0;
 			left: 0;
 		}
+	}
+
+	.hotest-section {
+		> div {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+
+			&:first-child {
+				top: 130px;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				max-width: 60%;
+
+				p {
+					color: var(--title-secondary-color);
+					font-size: 1.5rem;
+					font-weight: bold;
+					line-height: 2.5rem;
+					letter-spacing: -0.0375rem;
+				}
+			}
+
+			&:last-child {
+				bottom: 5.5rem;
+			}
+		}
+
+		.text-wrapper {
+			p {
+				font-size: 1.5rem;
+				line-height: 1.8rem;
+				letter-spacing: 0.11px;
+				color: var(--title-primary-color);
+			}
+
+			span {
+				font-size: 1.2rem;
+				line-height: 1.5rem;
+				display: block;
+				letter-spacing: 0.23px;
+				color: var(--text-light);
+				display: block;
+			}
+		}
+	}
+
+	.offer-section {
 	}
 }
